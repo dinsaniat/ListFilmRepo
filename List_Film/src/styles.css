@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  padding: 20px;
+}
+
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.head {
+  margin-bottom: 18px;
+}
+
+.head h1 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.head p {
+  font-size: 13px;
+  color: #666;
+}
+
+.add-film {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.add-film input {
+  flex: 1;
+  min-width: 120px;
+}
+
+.find-film {
+  margin-bottom: 10px;
+}
+
+.find-film input {
+  width: 100%;
+}
+
+.sort-film {
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filter-btns,
+.sort-btns {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+input,
+select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+button {
+  padding: 6px 12px;
+  border: 1px solid #bbb;
+  background: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+button:hover {
+  background: #e8e8e8;
+}
+
+.sort-film .active {
+  background: #444;
+  color: #fff;
+  border-color: #444;
+}
+
+.clear-btn {
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #888;
+}
+
+.film-list {
+  list-style: none;
+}
+
+.film-row {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.view-block {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.edit-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.edit-block input,
+.edit-block select {
+  flex: 1;
+  min-width: 100px;
+}
+
+.film-name {
+  font-size: 15px;
+  font-weight: bold;
+  min-width: 100px;
+}
+
+.film-name.done {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.film-meta {
+  font-size: 12px;
+  color: #888;
+}
+
+.film-rate {
+  font-size: 13px;
+  color: #c8880a;
+  letter-spacing: 1px;
+}
+
+.film-status {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+.status-want {
+  background: #e8f0fe;
+  color: #3a5fbf;
+}
+
+.status-watching {
+  background: #fff3e0;
+  color: #b84e00;
+}
+
+.status-done {
+  background: #e8f5e9;
+  color: #2a6e2a;
+}
+
+.empty {
+  color: #999;
+  font-size: 14px;
+  margin-top: 8px;
+}
